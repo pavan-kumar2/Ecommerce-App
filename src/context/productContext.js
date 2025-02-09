@@ -30,5 +30,5 @@ export const ProductProvider = ({ children }) => {
 
 
 
-    return (<ProductContext.Provider value={{ cart: cartState?.cart, filteredProducts, searchQuery, cartDispatch, setSearchQuery }}>{children}</ProductContext.Provider>)
+    return (<ProductContext.Provider value={{ productsState, cart: cartState?.cart, filteredProducts, searchQuery, cartDispatch, setSearchQuery }}>{children}</ProductContext.Provider>)
 }

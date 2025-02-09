@@ -29,3 +29,13 @@
 .btn:active {
   scale: 0.98;
 }
+
+.util-image {
+  max-width: 200px;
+  width: 100%;
+  margin: auto;
+}
+
+.container {
+  min-height: calc(100dvh - 152px);
+}

@@ -4,6 +4,7 @@
   height: 300px;
   padding: 20px;
   object-fit: contain;
+  margin: auto;
 }
 
 .btn {
