@@ -1,0 +1,26 @@
+.card-img-left {
+  width: 250px;
+  min-width: 250px;
+  height: 300px;
+  padding: 20px;
+  object-fit: contain;
+}
+
+.btn {
+  transition: all 0.1s ease-in-out;
+}
+.btn:active {
+  scale: 0.99;
+}
+
+.disable-btn {
+  pointer-events: none;
+}
+
+.min-w-90 {
+  min-width: 90px;
+}
+
+.cart-action-container {
+  gap: 20px 30px;
+}
