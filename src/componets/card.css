@@ -3,6 +3,7 @@
   width: 100%;
   padding: 20px;
   object-fit: contain;
+  margin: auto;
 }
 
 .card-name {
@@ -31,8 +32,10 @@
 }
 
 .util-image {
-  max-width: 200px;
+  height: 250px;
   width: 100%;
+  padding: 20px;
+  object-fit: contain;
   margin: auto;
 }
 

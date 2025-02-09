@@ -62,7 +62,13 @@ const Cards = memo(() => {
               </div>
             ))}
           </div>
-        ) : !isLoading && error ? (
+        ) : !isLoading && !filteredProducts.length && !error ? (
+          <img
+            className="util-image"
+            src={images.noSearchResultFound}
+            alt="no-search-result-found"
+          />
+        ) : !isLoading && !filteredProducts.length && error ? (
           <img
             className="util-image"
             src={images.noProductFound}
