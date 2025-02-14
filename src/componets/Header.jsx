@@ -7,7 +7,6 @@ const Header = memo(() => {
 
   const { searchQuery, setSearchQuery, cart } = useContext(ProductContext);
 
-  console.log("header rendering");
   return (
     <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
       <div className="container-fluid">

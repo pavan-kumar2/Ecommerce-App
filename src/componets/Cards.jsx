@@ -9,7 +9,6 @@ const Cards = memo(() => {
 
   const { isLoading, error } = productsState;
 
-  console.log("card rendering");
   return (
     <div className="album py-5 bg-body-tertiary">
       <div className="container d-flex">

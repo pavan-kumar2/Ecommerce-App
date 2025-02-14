@@ -5,7 +5,7 @@ import images from "../utils/images";
 
 const Cart = memo(() => {
   const { cartDispatch, filteredProducts } = useContext(ProductContext);
-  console.log("cart rendering");
+
   return (
     <div className="container row mb-2 mt-5 mx-auto">
       {filteredProducts.length ? (
