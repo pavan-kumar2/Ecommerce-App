@@ -1,11 +1,14 @@
 import React, { memo, useContext, useState } from "react";
 import { Link, NavLink } from "react-router";
 import { ProductContext } from "../context/productContext";
+import { useInput } from "../hook/useInput";
 
 const Header = memo(() => {
   const [isOpen, setIsOpen] = useState(false);
 
   const { searchQuery, setSearchQuery, cart } = useContext(ProductContext);
+
+  const [bindSearch] = useInput(searchQuery, setSearchQuery);
 
   return (
     <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
@@ -46,8 +49,7 @@ const Header = memo(() => {
               type="search"
               placeholder="Search product"
               aria-label="Search"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
+              {...bindSearch}
             />
           </form>
         </div>
