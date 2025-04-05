@@ -1,11 +1,11 @@
-.loader {
+.spin-loader {
   border: 16px solid #f3f3f3;
   border-radius: 50%;
   border-top: 16px solid #0dcaf0;
   width: 120px;
   height: 120px;
-  -webkit-animation: spin 2s linear infinite; /* Safari */
-  animation: spin 2s linear infinite;
+  -webkit-animation: spin 1s linear infinite; /* Safari */
+  animation: spin 1s linear infinite;
   margin: auto;
 
   @media (max-width: 768px) {
