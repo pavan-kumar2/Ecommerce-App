@@ -2,6 +2,7 @@ import "./card.css";
 import React, { memo, useContext } from "react";
 import { ProductContext } from "../context/productContext";
 import images from "../utils/images";
+import Loader from "./Loader";
 
 const Cards = memo(() => {
   const { filteredProducts, cartDispatch, productsState } =
@@ -13,11 +14,7 @@ const Cards = memo(() => {
     <div className="album py-5 bg-body-tertiary">
       <div className="container d-flex">
         {isLoading ? (
-          <img
-            className="util-image"
-            src={images.loadingAnimation}
-            alt="loading"
-          />
+          <Loader></Loader>
         ) : !isLoading && filteredProducts.length ? (
           <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             {filteredProducts.map((product) => (
